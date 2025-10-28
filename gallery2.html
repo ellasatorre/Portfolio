@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code</title>
+    
+    <link rel="icon" href="assets/star.png">
+
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+  
+
+    <h1>ELLA SATORRE</h1>
+<!-- navbar -->
+<div class="topnav" id="myTopnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <div class="dropdown">
+        <button class="dropbtn"> 
+            Gallery
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="gallery1.html">Code</a>
+          <a href="gallery2.html">Blender</a>
+          <a href="gallery3.html">Animations</a>
+          <a href="gallery4.html">Mixed Media</a>
+        </div>
+      </div> 
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+<br>
+
+<div class="gallery-item">
+  <img src="images/proj1_0.png" alt="Project 1">
+  <div class="gallery-text">
+    <p>
+      A drawing program made with p5.js based on aquatic life. 
+      <br>
+      <a href="p5_code/project1/index.html">Run the program</a>
+      <br>
+      <a href="p5_code/project1/sketch.js">Open the code</a>
+    </p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/gnome.png" alt="Project 2">
+  <div class="gallery-text">
+    <p>
+      A party gnome I made in p5.js
+      <br>
+      <a href="p5_code/ex1_gnome/index.html">Run the program</a>
+      <br>
+      <a href="p5_code/ex1_gnome/sketch.js">Open the code</a>
+    </p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="images/project4.png" alt="Project 2">
+  <div class="gallery-text">
+    <p>
+      A clock based on sheet music I made in p5.js
+      <br>
+      <a href="p5_code/finalproject/index.html">Run the program</a>
+      <br>
+      <a href="p5_code/finalproject/sketch.js">Open the code</a>
+    </p>
+  </div>
+</div>
+
+  <br>
+
+<!-- instagram -->
+<div class="social">
+  <a href="https://www.instagram.com/esatorre.art/" target="_blank">
+      <img src="assets/instagram.png">
+  </a>
+  </div>
+  
+</body>
+</html>

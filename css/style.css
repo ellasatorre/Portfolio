@@ -1,0 +1,303 @@
+
+@font-face {
+    font-family: 'NicoPups';
+    src: url('../fonts/NicoPups-Regular.eot');
+    src: url('../fonts/NicoPups-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NicoPups-Regular.woff2') format('woff2'),
+        url('../fonts/NicoPups-Regular.woff') format('woff'),
+        url('../fonts/NicoPups-Regular.ttf') format('truetype'),
+        url('../fonts/NicoPups-Regular.svg#NicoPups-Regular') format('svg');
+    font-weight: regular;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NicoPaint';
+    src: url('../fonts/NicoPaint-Regular.eot');
+    src: url('../fonts/NicoPaint-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NicoPaint-Regular.woff2') format('woff2'),
+        url('../fonts/NicoPaint-Regular.woff') format('woff'),
+        url('../fonts/NicoPaint-Regular.ttf') format('truetype'),
+        url('../fonts/NicoPaint-Regular.svg#NicoPaint-Regular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NicoClean';
+    src: url('../fonts/NicoClean-Regular.eot');
+    src: url('../fonts/NicoClean-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NicoClean-Regular.woff2') format('woff2'),
+        url('../fonts/NicoClean-Regular.woff') format('woff'),
+        url('../fonts/NicoClean-Regular.ttf') format('truetype'),
+        url('../fonts/NicoClean-Regular.svg#NicoClean-Regular') format('svg');
+    font-weight: medium;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NicoBold';
+    src: url('../fonts/NicoBold-Regular.eot');
+    src: url('../fonts/NicoBold-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NicoBold-Regular.woff2') format('woff2'),
+        url('../fonts/NicoBold-Regular.woff') format('woff'),
+        url('../fonts/NicoBold-Regular.ttf') format('truetype'),
+        url('../fonts/NicoBold-Regular.svg#NicoBold-Regular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    color: black;
+    background-color: rgb(225, 225, 230);
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+
+video{
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    font-size: 125%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    font-family: monospace;
+}
+
+h1{
+    color: #1f0047;
+    font-size: 500%;
+    font-family: NicoBold;
+    font-variant: small-caps;
+    background-image: url("../assets/banner.png");
+    background-repeat: no-repeat; 
+    background-size: cover;   
+    text-align: center;
+    height: 100px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+h2{
+    text-align: center;
+    font-family: NicoPups;
+    font-size: 400%;
+}
+
+/* navbar */
+.topnav {
+    background-color: #4a6b91;
+    overflow: hidden;
+  }
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: NicoPups;
+ }
+
+.active{
+    background-color: #2f578b;
+}
+
+.topnav .icon {
+    display: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 24px 26px;
+    background-color: inherit;
+    font-family: NicoPups;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  } 
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #c4eefc;
+    color: #181249;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #d5f2ff;
+    color: black;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+/* homepage */
+
+.social img{
+    width: 6%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* about me */
+.statement {
+    background: rgba( 255, 255, 255, 0.15 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+
+    display: flex; 
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+.statement img {
+    width: 35%;
+    height: 35%;
+}
+
+.statement p{
+    margin: 15px;
+}
+
+.contact {
+    text-align: center;
+}
+
+/* gallery grid */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    border: 1px solid transparent;
+    padding: 5px;
+    font-size: 150%;
+    text-align: center;
+  }
+
+  .grid-item img{
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .grid-item video{
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* gallery scroll */
+
+  .gallery-item {
+    display: flex;
+    flex-direction: column; /* image on top, text below */
+    align-items: center;
+    margin: 40px 20%; /* side margins = 20% */
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .gallery-item img {
+    width: 45%; /* image takes up 45% of the container width */
+    height: auto;
+  }
+  
+  .gallery-text {
+    text-decoration: none;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    width: 80%; /* optional – keeps text narrower and centered */
+  }
+  
+  /* Make it responsive */
+  @media (max-width: 768px) {
+    .gallery-item {
+      flex-direction: column;
+    }
+    .gallery-item img,
+    .gallery-text {
+      width: 100%;
+    }
+  }
+  
+  
